@@ -1,0 +1,69 @@
+.project-container {
+    width: 700px;
+    height: 750px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.project-container:hover {
+    transform: scale(1.05);
+}
+
+.project-top {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.project-bottom {
+    font-size: 20pt;
+    text-align: left;
+    padding: 20px;
+}
+
+.project-name {
+    font-weight: bold;
+}
+
+.project-description {
+    font-size: 15pt;
+}
+
+.pill {
+    font-size: 10pt;
+    color: black;
+    font-weight: 700;
+    border: 1px solid black;
+    border-radius: 999px;
+    padding: 5px 10px 5px 10px;
+}
+
+.pill-container {
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+@media (max-width: 1000px) {
+    .project-top {
+        display: none;
+    }
+
+    .project-container {
+        width: 100%;
+        border-radius: 0;
+        height: auto;
+    }
+
+    .project-description {
+        font-size: 12pt;
+    }
+
+    .pill {
+        font-size: 8pt;
+    }
+}

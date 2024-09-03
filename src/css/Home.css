@@ -1,0 +1,130 @@
+body {
+
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    /* font-weight: <weight>; */
+    font-style: normal;
+    color: black;
+
+    /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
+}
+
+.title {
+    font-size: 50pt;
+    font-weight: 600;
+}
+
+.title-letter {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.coral-runner {
+    background: linear-gradient(to right, #ff70709f, #ff6f6f8c);
+    width: 70%;
+    height: 200px;
+    text-align: center;
+    align-items: center;
+}
+
+.two-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.two-container-left {
+    width: 40%;
+    padding: 20px;
+    font-size: 15pt;
+    font-weight: 500
+}
+
+.two-container-right {
+    width: 40%;
+    padding: 20px;
+    font-size: 15pt;
+    font-weight: 500
+}
+
+.fading-text {
+    background: linear-gradient(to right, black, black 70%, transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.fading-text-mask {
+    mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.5), rgba(0,0,0,0));
+    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.5), rgba(0,0,0,0));
+}
+
+.main-body-element {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main-body-container {
+    font-size: 17pt;
+    width: 60%;
+    text-align: left;
+}
+
+.green-container {
+    width: 50%;
+    background-color: rgba(64, 107, 59, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.about-me {
+    font-size: 30pt;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+
+@media (max-width: 1000px) {
+    .green-container {
+        width: 100vw;
+        border-radius: 0;
+        background-color: rgba(64, 107, 59, 0.2);
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .main-body-container {
+        width: 90vw;
+        font-size: 13pt;
+    }
+
+    .green-container img {
+        position: relative;
+        left: -20px;
+    }
+
+    .title {
+        font-size: 30pt;
+    }
+
+    .about-me {
+        font-size: 20pt;
+    }
+
+    .green-container img {
+        margin-bottom: 20px;
+    }
+}
