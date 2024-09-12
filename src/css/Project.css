@@ -1,7 +1,7 @@
 .project-container {
     width: 700px;
     height: 750px;
-    border-radius: 10px;
+    border-radius: 10px 10px 10px 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     cursor: pointer;
@@ -48,6 +48,20 @@
     padding: 10px;
 }
 
+@media (max-width: 1600px) {
+    .project-container {
+        width: 600px;
+        max-height: 550px;
+        border-radius: 0;
+        height: auto;
+    }
+
+    .project-top {
+        height: 300px;
+    }
+    
+}
+
 @media (max-width: 1000px) {
     .project-top {
         display: none;
@@ -67,3 +81,4 @@
         font-size: 8pt;
     }
 }
+

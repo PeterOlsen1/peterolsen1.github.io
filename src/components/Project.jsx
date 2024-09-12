@@ -44,7 +44,7 @@ const Pill = ({ text }) => {
  * @param {*} image
  * @returns 
  */
-const Project = ({ name, description, technologies, url, image }) => {
+const Project = ({ name, description, technologies, url, image}) => {
     const handleClick = (e) => {
         if (url) {
             window.open(url, '_blank');

@@ -41,8 +41,9 @@ const Index = () => {
                             </span>
                             <span>
                                 In addition to web development, I'd love to learn more about 
-                                AI/ML, compilers, natural language processing, systems programming, <span className='fading-text-mask'><span className='fading-text'>programming languages, ...</span></span> 
-                                (basically every subfield of computer science).
+                                AI/ML, compilers, natural language processing, and systems programming.
+                                {/* <span className='fading-text-mask'><span className='fading-text'>programming languages, ...</span></span>  */}
+                                {/* (basically every subfield of computer science). */}
                             </span>
                         </div>
                         <div className='main-body-element'>
