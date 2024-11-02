@@ -21,9 +21,9 @@ const Index = () => {
                 <br></br>
                 <Title text='Welcome to my Website!' />
                 <br></br>
-                <div className='about-me'>
+                {/* <div className='about-me'>
                     About me:
-                </div>
+                </div> */}
                 <div className='inline-flex-center green-container'>
                     <div className='main-body-container'>
                         <div className='main-body-element'>
@@ -36,8 +36,9 @@ const Index = () => {
                         <div className='main-body-element'>
                             <span style={{fontWeight: 'bold'}}>what do i work on?</span>
                             <span>
-                                My current focus in my education is on web development. My current webdev education only consists of a single course,
-                                but my informal education consists of lots of reading up on web framework documentation!
+                                My current focus in my education is on web development. I've completed coursework in both basic web development and
+                                advanced webdev, which focuses primarily on the use and learning of frameworks. I loved it so much I decided to TA
+                                internet programming!
                             </span>
                             <span>
                                 In addition to web development, I'd love to learn more about 
@@ -49,13 +50,21 @@ const Index = () => {
                         <div className='main-body-element'>
                             <span style={{fontWeight: 'bold'}}>what am i CURRENTLY working on?</span>
                             <span>
-                                By the time fall semester starts, I won't have much time for projects, however 
-                                I'm currently working on a project that serves two purposes:
+                                This current semester, I don't have much time for personal projects (aside from my <a href='https://peterolsen1.github.io/gopher-transit/' style={{textDecoration: 'underline'}} target='_blank' rel="noreferrer">MetroTransit app</a>), however 
+                                I'm currently working on a few large class projects, including:
+                                <ol>
+                                    <li>A complex sheet muisc webapp 🎹</li>
+                                    <li>An exploration and analysis of searching algorithms 🔍</li>
+                                </ol>
+                                Which should be included on this site by the end of the semester.
+                                If you want to see my progress on those, check out the public repos on my&nbsp;
+                                <a href='https://github.com/PeterOlsen1' style={{textDecoration: 'underline'}} target='_blank' rel="noreferrer">Github</a>
+                                {/* I'm currently working on a project that serves two purposes:
                                 <ol>
                                     <li>Learn rust 🦀</li>
                                     <li>Parse files on multiple threads to allow a user to locate information about their functions</li>
                                 </ol>
-                                Find more about it <a href='https://github.com/PeterOlsen1/function-finder' style={{textDecoration: 'underline'}} target='_blank' rel="noreferrer">here</a>
+                                Find more about it <a href='https://github.com/PeterOlsen1/function-finder' style={{textDecoration: 'underline'}} target='_blank' rel="noreferrer">here</a> */}
                             </span>
                         </div>
                     </div>

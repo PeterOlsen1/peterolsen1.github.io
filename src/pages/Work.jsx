@@ -57,9 +57,10 @@ const Work = () => {
                         <li>As an instructor, I gained experience facilitating learning through explanation.</li>
                         <li>As a grader, I gained experience revising assignments based on how the students learn best.</li>
                     </ul>
-                    So far, I only have experience as a TA for the introductory Python course, CSCI 1133. Starting fall 2024 semester,
-                    I am assigned to internet programming, CSCI 4131. This will give me more experience solving more complex problems on a regular basis.
-                    Plus, who doesn't love internet programming?
+                    My work as a TA started out with introductory python, but I made the switch this previous semester to
+                    csci 4131, also known as Internet Programming. This class hits on much more advanced topics such as HTTP requests,
+                    responsive page design, basics of HTML, CSS, JS, and SQL, among many other topics. It has been extremely helpul for my development
+                    as a programmer, and especially helpful for my ability to explain and reason through high level topics.
                 </div>
             </div>
         </div>

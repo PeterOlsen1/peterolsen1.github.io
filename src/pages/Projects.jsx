@@ -7,6 +7,7 @@ import functionFinderImage from '../images/function_finder.png';
 import plantProcessorImage from '../images/plant_processor.png';
 import RAOinternalImage from '../images/rao_internal.png';
 import busRouterImage from '../images/bus-router.png';
+import plantifulImage from '../images/plantiful.png';
 
 const Projects = () => {
     return (
@@ -18,12 +19,20 @@ const Projects = () => {
             <br /><br />
             <div className="inline-flex-center" style={{width: '100%', gap: '40px'}}>
                 <Project 
-                    name='Bus Router' 
+                    name='Gopher Transit' 
                     description='A simple single page website that uses the Metro Transit API to easily help UMN students check transit schedules.
                     Clicking this card will take you directly to the site.'
                     technologies={['HTML', 'CSS', 'JavaScript']}
-                    url='https://peterolsen1.github.io/bus-router/'
+                    url='https://peterolsen1.github.io/gopher-transit/'
                     image={busRouterImage} 
+                />
+                <Project 
+                    name='Plantiful' 
+                    description='A rebirthed version of my plant processor, Plantiful is a site that allows users to upload photos of their plants and
+                    interact with others, all in a streamlined and nicely-styled way. Hopefully the link works but it is possible that render suspended our service. 😢'
+                    technologies={['Flask', 'Jinja', 'PostgreSQL', 'SQLAlchemy']}
+                    url='https://plantiful.onrender.com/'
+                    image={plantifulImage} 
                 />
                 <Project 
                     name='Function Finder' 

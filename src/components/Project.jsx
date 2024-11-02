@@ -14,7 +14,9 @@ const colors = {
     'express' : [207, 141, 27],
     'mongodb' : [32, 199, 48],
     'jbase basic' : [27, 97, 16],
-    'chart.js' : [5, 230, 255]
+    'chart.js' : [5, 230, 255],
+    'postgresql' : [235, 225, 52],
+    'sqlalchemy' : [14, 63, 237]
 }
 
 

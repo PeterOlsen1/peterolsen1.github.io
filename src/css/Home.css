@@ -98,6 +98,12 @@ body {
 }
 
 
+@media (max-width: 1600px) {
+    .green-container {
+        width: 80vw;
+    }
+}
+
 @media (max-width: 1000px) {
     .green-container {
         width: 100vw;
