@@ -3,9 +3,14 @@ footer {
     width: inherit;
     background-color: rgba(200, 200, 200, 0.2);
     height: 50px;
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     font-weight: 600;
     max-width: 100vw;
+    width: 100vw;
+
+    position: fixed;
+    bottom: 0;
 }
 
 @media (max-width: 1000px) {

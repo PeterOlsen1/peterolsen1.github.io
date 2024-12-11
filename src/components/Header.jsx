@@ -89,7 +89,7 @@ const Header = ({ page }) => {
                 <p style={{ padding: 0, margin: 0 }}>
                     Peter Olsen 
                 </p>
-                <div className='inline-flex-center' style={{ gap: '20px' }}>
+                <div className='inline-flex-center'>
                     <SocialLink type='github' />
                     <SocialLink type='linkedin' />
                     <SocialLink type='instagram' />

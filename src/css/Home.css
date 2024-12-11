@@ -88,6 +88,8 @@ body {
     background-color: rgba(64, 107, 59, 0.2);
     border-radius: 5px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
 
 .about-me {
