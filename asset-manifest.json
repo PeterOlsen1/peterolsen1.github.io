@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.c79662d1.css",
+    "main.css": "/static/css/main.6bf9ce6c.css",
     "main.js": "/static/js/main.22dfa5db.js",
     "static/js/453.435f11c5.chunk.js": "/static/js/453.435f11c5.chunk.js",
     "static/media/me.JPG": "/static/media/me.e60425328dd6892df10c.JPG",
@@ -11,12 +11,12 @@
     "static/media/bus-router.png": "/static/media/bus-router.03c16bb8ef047e3e8920.png",
     "static/media/instagram.webp": "/static/media/instagram.a4ae0023b88ceeba26f7.webp",
     "index.html": "/index.html",
-    "main.c79662d1.css.map": "/static/css/main.c79662d1.css.map",
+    "main.6bf9ce6c.css.map": "/static/css/main.6bf9ce6c.css.map",
     "main.22dfa5db.js.map": "/static/js/main.22dfa5db.js.map",
     "453.435f11c5.chunk.js.map": "/static/js/453.435f11c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c79662d1.css",
+    "static/css/main.6bf9ce6c.css",
     "static/js/main.22dfa5db.js"
   ]
 }
