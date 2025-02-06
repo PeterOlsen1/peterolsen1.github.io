@@ -9,7 +9,7 @@
 }
 
 .work-body {
-    font-size: 18pt;
+    font-size: 14pt;
     text-align: left;
 }
 
@@ -18,15 +18,16 @@
     align-items: normal;
     height: auto;
 
-    background: linear-gradient(100deg, rgba(245, 104, 104, 0.212), rgba(255, 90, 90, 0.158));
-    padding: 30px;
+    /* background: linear-gradient(100deg, rgba(245, 104, 104, 0.212), rgba(255, 90, 90, 0.158)); */
+    background-color: #a3b8ac;
+    padding: 3em;
     border-radius: 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2); 
 }
 
 .subtext {
     font-weight: 300;
-    font-size: 15pt;
+    font-size: 13pt;
 }
 
 @media (max-width: 1000px) {

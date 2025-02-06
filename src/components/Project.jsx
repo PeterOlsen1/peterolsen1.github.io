@@ -16,7 +16,11 @@ const colors = {
     'jbase basic' : [27, 97, 16],
     'chart.js' : [5, 230, 255],
     'postgresql' : [235, 225, 52],
-    'sqlalchemy' : [14, 63, 237]
+    'sqlalchemy' : [14, 63, 237],
+    'ember.js': [245, 78, 66],
+    'firebase': [245, 158, 66],
+    'azure': [66, 102, 245],
+    'svelte': [66, 245, 66],
 }
 
 

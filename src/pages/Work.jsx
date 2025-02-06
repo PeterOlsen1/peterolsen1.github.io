@@ -33,6 +33,7 @@ const Work = () => {
                     Some features of the app include interactive Chart.js data visualization, a live-updating page for viewing and updating production data, 
                     a complex email system to notify employees of important information, and an API server in the jBASE database to allow for future users to easily access historical data.
                 </div>
+                
                 <br />
                 <div className="dividing-line"></div>
                 <div className="work-header">

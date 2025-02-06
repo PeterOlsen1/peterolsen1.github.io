@@ -1,10 +1,11 @@
 .project-container {
-    width: 700px;
-    height: 750px;
+    width: 30em;
+    height: 35em;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
     cursor: pointer;
+    background-color: white;
 }
 
 .project-container:hover {
@@ -17,24 +18,26 @@
     object-fit: cover;
     overflow: hidden;
     border-radius: 10px 10px 0 0;
+    box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .project-bottom {
-    font-size: 20pt;
+    font-size: 12pt;
     text-align: left;
     padding: 20px;
 }
 
 .project-name {
+    font-size: 20pt;
     font-weight: bold;
 }
 
 .project-description {
-    font-size: 15pt;
+    font-size: 12pt;
 }
 
 .pill {
-    font-size: 10pt;
+    font-size: 9pt;
     color: black;
     font-weight: 700;
     border: 1px solid black;

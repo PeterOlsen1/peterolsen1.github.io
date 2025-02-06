@@ -75,6 +75,7 @@ body {
     gap: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .main-body-container {
@@ -84,12 +85,26 @@ body {
 }
 
 .green-container {
-    width: 50%;
-    background-color: rgba(64, 107, 59, 0.2);
-    border-radius: 5px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    /* background-color: rgba(64, 107, 59, 0.2); */
+    /* border-radius: 5px; */
+    /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4); */
     padding-bottom: 1em;
     padding-top: 1em;
+    margin-top: 4em;    
+    gap: 1em;
+
+    img {
+        /* width: 75%;
+        height: 75%; */
+        max-width: 85%;
+        max-width: 20em;
+        margin-right: auto;
+        margin-left: auto;
+        margin: 0.25em;
+        border-radius: 5px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    }
 }
 
 .about-me {
@@ -110,7 +125,6 @@ body {
     .green-container {
         width: 100vw;
         border-radius: 0;
-        background-color: rgba(64, 107, 59, 0.2);
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
     }
 

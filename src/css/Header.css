@@ -1,6 +1,6 @@
 header {
     width: 100%;
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
     background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: center;
@@ -70,7 +70,7 @@ a, a:visited {
 }
 
 .social-link {
-    font-size: 1vmin;
+    font-size: 0.25em;
     align-items: center;
     letter-spacing: normal;
     padding: 5px;
@@ -114,14 +114,15 @@ a, a:visited {
         gap: 0.33em;
     }
     .header-left {
+        padding-left: 1em;
         display: grid;
         grid-template-columns: 4fr 6fr;
         width: 100%;
-        font-size: 2.95vmin;
+        font-size: 4vmin;
     }
 
     .social-link {
-        font-size: 2vmin;
+        font-size: 0.4em;
     }
 
     .header-right {

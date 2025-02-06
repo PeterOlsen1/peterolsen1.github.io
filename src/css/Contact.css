@@ -11,6 +11,7 @@ input, textarea {
     font-family: 'DM Sans', sans-serif;
     resize: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 0.5em;
 }
 
 form {
@@ -20,6 +21,7 @@ form {
     flex-direction: column;
     gap: 2em;
     width: 60%;
+    height: 45vh;
 }
 
 .input-container {

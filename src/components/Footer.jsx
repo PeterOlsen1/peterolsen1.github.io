@@ -4,12 +4,16 @@ import { SocialLink } from "./Header.jsx";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+    function doStuff() {
+        document.body.style.color = 'white';
+        document.body.style.backgroundColor = 'black';
+    }
     return (
         <footer>
             <div className="inline-flex-center" style={{gap: '10px'}}>
                 <span>Created by Peter Olsen, 2024</span>
                 <span>|</span>
-                <Link to="/contact" style={{textDecoration: 'underline'}}>Contact Me</Link>
+                <span>Check out my socials</span>
             </div>
             <br />
             <div className="inline-flex-center" style={{gap: '10px'}}>
@@ -19,6 +23,8 @@ const Footer = () => {
                 <span>|</span>
                 <SocialLink type='instagram' />
             </div>
+            <br ></br>
+            {/* <button onClick={doStuff}>do stuff</button> */}
         </footer>
     )
 }
