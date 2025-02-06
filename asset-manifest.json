@@ -1,22 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.6bf9ce6c.css",
-    "main.js": "/static/js/main.22dfa5db.js",
+    "main.css": "/static/css/main.a6fe7ced.css",
+    "main.js": "/static/js/main.5b7f16bf.js",
     "static/js/453.435f11c5.chunk.js": "/static/js/453.435f11c5.chunk.js",
-    "static/media/me.JPG": "/static/media/me.e60425328dd6892df10c.JPG",
+    "static/media/me_picnic.jpeg": "/static/media/me_picnic.131b86627ec1bd5fe45f.jpeg",
     "static/media/plantiful.png": "/static/media/plantiful.8a0c2975450ae4e00615.png",
+    "static/media/holy-sheet.png": "/static/media/holy-sheet.5e2a838406575892c4ae.png",
     "static/media/plant_processor.png": "/static/media/plant_processor.5f97ec347e4a34047d41.png",
+    "static/media/me_kiwi.jpg": "/static/media/me_kiwi.c98902fb3937597a51f8.jpg",
+    "static/media/gopher-hours.png": "/static/media/gopher-hours.9841bdd0553e5ef80c65.png",
     "static/media/rao_internal.png": "/static/media/rao_internal.ffce9c560d27c920a994.png",
     "static/media/function_finder.png": "/static/media/function_finder.e98614d4f8297e6fbb34.png",
     "static/media/bus-router.png": "/static/media/bus-router.03c16bb8ef047e3e8920.png",
     "static/media/instagram.webp": "/static/media/instagram.a4ae0023b88ceeba26f7.webp",
     "index.html": "/index.html",
-    "main.6bf9ce6c.css.map": "/static/css/main.6bf9ce6c.css.map",
-    "main.22dfa5db.js.map": "/static/js/main.22dfa5db.js.map",
+    "main.a6fe7ced.css.map": "/static/css/main.a6fe7ced.css.map",
+    "main.5b7f16bf.js.map": "/static/js/main.5b7f16bf.js.map",
     "453.435f11c5.chunk.js.map": "/static/js/453.435f11c5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6bf9ce6c.css",
-    "static/js/main.22dfa5db.js"
+    "static/css/main.a6fe7ced.css",
+    "static/js/main.5b7f16bf.js"
   ]
 }
