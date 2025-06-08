@@ -39,6 +39,19 @@ assignment_export/
 ```
 
 Upon first examination, this doesn't seem like it could be _that_ bad, but when you have to grade 20+ submissions
-and each one is named **submission_x** it gets a little frustrating. It's like playing hide and go seek, but within an overwhelming number of terminal tabs and directories. 
+and each one is named **submission_x** it gets a little frustrating. It's like playing hide and go seek, but within an 
+ungodly number of terminal tabs and directories. So, I did what any sane person would do. I decided to make my first 
+desktop app!
 
-<!-- So what's the solution? Spend way more time creating a solution to confront this problem on your behalf! -->
+### Technologies
+
+The main decision here is my aversion to electron. **Why?** Electron packages both a node and chromium runtime within your
+compiled app, which results in a default size of at least _~200mb_ (holy crap!). Not wanting to take up this much
+space for a simple app, I decided to set my sights on some other desktop app creation tools. My search lead me to 
+<a href="https://v2.tauri.app/">tauri.</a> Tauri combines all of my weird programming special interests into one,
+allowing me to use both Rust and Svelte (or really any frontend framework). But the real advantage here is the size.
+Tauri hooks into the native OS' webview, meaning that there's no need to package chromium and node, 
+resulting in a "Hello World" app size of under _1mb_!
+
+### Procedures
+
