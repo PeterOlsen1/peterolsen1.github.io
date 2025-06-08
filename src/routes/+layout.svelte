@@ -11,10 +11,12 @@
 
 	const pages = [
 		{ name: 'Home', path: '/' },
+		{ name: '|', path: '/'},
 		{ name: 'Projects', path: '/projects' },
+		{ name: '|', path: '/'},
 		{ name: 'Experience', path: '/experience' }
-	]
-	
+	];
+
 	onMount(() => {
 		loadTheme();
 	});
@@ -29,7 +31,6 @@
 		width: 100%;
 		display: flex;
 		align-items: center;
-		padding: 0 20px;
 		/* border-bottom: 1px solid var(--border-color); */
 		padding-top: 1em;
 		padding-bottom: 1em;
@@ -69,9 +70,37 @@
 
 	.pages {
 		display: flex;
-		gap: 1em;
+		gap: 0.5em;
 		margin-left: auto;
 		margin-right: 2em;
+		align-items: center;
+	}
+
+	.separator {
+		width: 1px;
+		height: 1.5em;
+		background-color: var(--border-color);
+	}
+
+	.page {
+		font-weight: 500;
+		text-decoration: none;
+		padding: 0.5em 0.5em;
+		border-radius: 0.25em;
+		position: relative;
+		top: 0;
+		transition: background-color 0.2s, top 0.2s;
+
+		&:hover {
+			background-color: var(--button-background-color);
+			top: -0.1em;
+		}
+	}
+
+	@media (width < 1600px) {
+		.main {
+			width: 90%;
+		}
 	}
 </style>
 
@@ -89,9 +118,13 @@
 		</div>
 		<div class="pages">
 			{#each pages as page}
-				<a href={page.path}>
-					{page.name}
-				</a>
+				{#if page.name === '|'}
+					<span class="separator"></span>
+				{:else}
+					<a href={page.path} class="page">
+						{page.name}
+					</a>
+				{/if}
 			{/each}
 		</div>
 		<div class="theme-toggle" onclick={toggleTheme}> 

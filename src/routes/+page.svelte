@@ -1,9 +1,14 @@
+<script>
+    import IndexText from "$lib/components/IndexText.svelte";
+</script>
+
 <style>
     .main {
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 2em;
     }
 
     .header {
@@ -11,12 +16,33 @@
         text-align: center;
         font-size: 2em;
         font-weight: 600;
+        margin-top: 2em;
+        margin-bottom: 2em;
     }
 </style>
+
 
 <div class="main">
     <div class="header">
         Welcome!
     </div>
+    <IndexText title="who am i?">
+        My name is <b>Peter Olsen</b>, software engineer interested in all things new and exciting in the world of technology.
+        I have a passion for building software that is not only functional but also elegant and user-friendly.
+        <br><br>
+        Coming from a background in classical music, I approach technology with a creative mindset, meshing together
+        STUFF
+    </IndexText>
+
+    <IndexText title="where am i?">
+        As an undergraduate student at the University of Minnesota - Twin Cities, I've taken courses in eveyrthing from
+        machine learning, computer architecture, operating systems, and web development. I plan to pursue a master's degree
+        in computer science following my graduation next semester, hopefully increasing my knowledge and appreciation for
+        these great thinking rocks we call computers.
+    </IndexText>
+    <!-- <br><br><br><br><br><br><br>yo
+    <br><br><br><br><br><br><br>yo
+    <br><br><br><br><br><br><br>yo
+    <br><br><br><br><br><br><br>yo -->
 </div>
 
