@@ -65,10 +65,10 @@
     }
 </style>
 
-<div class="social-container" onclick={() => window.open(link, '_blank')}>
+<div class="social-container" onclick={() => window.open(link, '_blank')} onmouseover={handleMouseOver} onmouseout={handleMouseOut}>
     <img src={imageURL} alt="social media">
     <div class="social-link">
-        <div bind:this={linkRef} onmouseover={handleMouseOver} onmouseout={handleMouseOut}>
+        <div bind:this={linkRef}>
             {@render children()}        
         </div>
         <div class="social-underline" bind:this={underlineRef}></div>

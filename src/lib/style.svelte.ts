@@ -27,7 +27,6 @@ export const themes: any = {
         "--button-background-color": "rgba(200, 200, 200, 0.2)",
         "--button-hover-color": "rgba(200, 200, 200, 0.5)",
         "--black-image-filter": "invert(0)",
-        
     },
     dark: {
         "--border-color": "#ffffff",
