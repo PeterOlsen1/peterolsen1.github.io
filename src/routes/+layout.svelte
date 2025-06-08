@@ -4,6 +4,7 @@
 	import '../app.css';
     import SocialMedia from "$lib/components/SocialMedia.svelte";
 	import { page } from "$app/state";
+    import { goto } from "$app/navigation";
 
 	console.log(page.route.id);
 	let { children } = $props();
@@ -14,7 +15,9 @@
 		{ name: '|', path: '/'},
 		{ name: 'Projects', path: '/projects' },
 		{ name: '|', path: '/'},
-		{ name: 'Experience', path: '/experience' }
+		{ name: 'Experience', path: '/experience' },
+		{ name: '|', path: '/'},
+		{ name: 'Blog', path: '/blog' },
 	];
 
 	onMount(() => {
@@ -107,7 +110,7 @@
 <div class="main">
 	<div class="header">
 		<div class="flex-1 flex items-center">
-			<div class="font-[600] text-4xl tracking-wide">
+			<div class="font-[600] text-4xl tracking-wide cursor-pointer" onclick={() => goto('/')}>
 				Peter Olsen
 			</div>
 

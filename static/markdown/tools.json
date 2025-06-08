@@ -1,0 +1,18 @@
+{
+    "rust": "https://cdn.svgporn.com/logos/rust.svg",
+    "tauri": "https://cdn.svgporn.com/logos/tauri.svg",
+    "javascript": "https://cdn.svgporn.com/logos/javascript.svg",
+    "typescript": "https://cdn.svgporn.com/logos/typescript.svg",
+    "python": "https://cdn.svgporn.com/logos/python.svg",
+    "java": "https://cdn.svgporn.com/logos/java.svg",
+    "c": "https://cdn.svgporn.com/logos/c.svg",
+    "go": "https://cdn.svgporn.com/logos/go.svg",
+    "html": "https://cdn.svgporn.com/logos/html-5.svg",
+    "css": "https://cdn.svgporn.com/logos/css-3.svg",
+    "tailwind": "https://cdn.svgporn.com/logos/tailwindcss-icon.svg",
+    "svelte": "https://cdn.svgporn.com/logos/svelte-icon.svg",
+    "ember": "https://cdn.svgporn.com/logos/ember-tomster.svg",
+    "flask": "https://cdn.svgporn.com/logos/flask.svg",
+    "postgres": "https://cdn.svgporn.com/logos/postgresql.svg",
+    "firebase": "https://cdn.svgporn.com/logos/firebase.svg"
+}
