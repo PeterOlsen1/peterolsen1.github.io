@@ -3,7 +3,7 @@
     import Project from "$lib/components/Project.svelte";
     import { currentlySelectedProject, projects } from "./projects.svelte";
 
-    currentlySelectedProject.project = projects[0]; //reset to home project
+    Object.assign(currentlySelectedProject, projects[0]); //reset to home project
 
 </script>
 
@@ -25,12 +25,13 @@
 
     <div class="projects">
         {#each projects as project}
-            <Project title={project.title} article={project.article} onclickFunction={() => {
-                currentlySelectedProject.project = project;
-                goto(`/projects/${project.article}`);
-            }}>
-                {@html project.description}
-            </Project>
+            <Project 
+                project={project} 
+                onclickFunction={() => {
+                    Object.assign(currentlySelectedProject, project);
+                    goto(`/projects/${project.article}`);
+                }}
+            />
         {/each}
     </div>
 </div>

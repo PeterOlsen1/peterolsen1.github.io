@@ -3,7 +3,7 @@
     import { fade } from 'svelte/transition';
     const { children } = $props();
 
-    const projTitle = $derived(currentlySelectedProject.project.title);
+    const projTitle = $derived(currentlySelectedProject.title);
 </script>
 
 <style>
@@ -40,7 +40,7 @@
 
 <svelte:head>
     <title>Projects | {projTitle}</title>
-    <meta name="description" content={currentlySelectedProject.project.description} />
+    <meta name="description" content={currentlySelectedProject.description} />
 </svelte:head>
 <br><br>
 <div class="main">
@@ -53,8 +53,8 @@
         {/key}
     </h1>
     {#if projTitle !== 'Home'}
-        <a href='/projects' onclick={() => currentlySelectedProject.project = projects[0]}>
-            Home <img src='/arrow.png' style="filter: var(--black-image-filter); width: 1em; height: 1em;">
+        <a href='/projects' onclick={() => Object.assign(currentlySelectedProject, projects[0])}>
+            Back to projects <img src='/arrow.png' style="filter: var(--black-image-filter); width: 1em; height: 1em;">
         </a>
     {/if}
 

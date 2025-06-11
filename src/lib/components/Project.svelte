@@ -1,8 +1,8 @@
 <script lang="ts">
-    import { goto } from "$app/navigation";
+    import Technology from "./Technology.svelte";
 
-    //"children" just refers to the inner content of the component body
-    const { children, title, article, onclickFunction } = $props();
+    const { project, onclickFunction } = $props();
+    console.log(project);
 </script>
 
 <style>
@@ -42,15 +42,30 @@
         gap: 0.5em;
         transition: gap 0.2s ease-in-out;
     }
+
+    .techs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5em;
+        margin-top: 0.25em;
+        margin-bottom: 0.25em;
+    }
 </style>
 
-{#if title !== 'Home'}
+{#if project.title !== 'Home'}
     <div class="project" onclick={onclickFunction}>
         <h1>
-            {title} <img src="/arrow.png" style="filter: var(--black-image-filter); width: 1em; height: 1em;">
+            {project.title} <img src="/arrow.png" style="filter: var(--black-image-filter); width: 1em; height: 1em;">
         </h1>
+        {#if project.technologies && project.technologies.length > 0}
+            <div class="techs">
+                {#each project.technologies as tech}
+                    <Technology tech={tech} isSmall />
+                {/each}
+            </div>
+        {/if}
         <p>
-            {@render children()}
+            {@html project.description}
         </p>
     </div>
 {/if}
