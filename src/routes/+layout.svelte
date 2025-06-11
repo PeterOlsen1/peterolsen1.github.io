@@ -26,21 +26,25 @@
 </script>
 
 <style>
-	.main {
+	.main, .header-content {
 		width: 60%;
 	}
 
 	.header {
 		width: 100%;
 		display: flex;
-		align-items: center;
-		/* border-bottom: 1px solid var(--border-color); */
+		justify-content: center;
 		padding-top: 1em;
 		padding-bottom: 1em;
 		z-index: 1000;
 		position: sticky;
 		top: 0;
 		backdrop-filter: blur(0.5em);
+	}
+
+	.header-content {
+		display: flex;
+		align-items: center;
 	}
 
 	img {
@@ -101,14 +105,14 @@
 	}
 
 	@media (width < 1600px) {
-		.main {
+		.main, .header-content {
 			width: 90%;
 		}
 	}
 </style>
 
-<div class="main">
-	<div class="header">
+<div class="header">
+	<div class="header-content">
 		<div class="flex-1 flex items-center">
 			<div class="font-[600] text-4xl tracking-wide cursor-pointer" onclick={() => goto('/')}>
 				Peter Olsen
@@ -138,5 +142,7 @@
 			{/if}
 		</div>
 	</div>
+</div>
+<div class="main">
 	{@render children()}
 </div>

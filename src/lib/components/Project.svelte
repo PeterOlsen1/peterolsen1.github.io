@@ -49,21 +49,45 @@
         gap: 0.5em;
         margin-top: 0.25em;
         margin-bottom: 0.25em;
+        flex: 1;
+        justify-content: flex-end;
+    }
+
+    .title-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    @media (width < 1000px) {
+        .title-container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .techs {
+            justify-content: center;
+            width: 100%;
+        }
     }
 </style>
 
+<!-- don't return anything if it is the home component -->
 {#if project.title !== 'Home'}
     <div class="project" onclick={onclickFunction}>
-        <h1>
-            {project.title} <img src="/arrow.png" style="filter: var(--black-image-filter); width: 1em; height: 1em;">
-        </h1>
-        {#if project.technologies && project.technologies.length > 0}
-            <div class="techs">
-                {#each project.technologies as tech}
-                    <Technology tech={tech} isSmall />
-                {/each}
-            </div>
-        {/if}
+        <div class="title-container">
+            <h1>
+                {project.title} <img src="/arrow.png" style="filter: var(--black-image-filter); width: 1em; height: 1em;">
+            </h1>
+            {#if 'technologies' in project && project.technologies.length > 0}
+                <div class="techs">
+                    {#each project.technologies as tech}
+                        <Technology tech={tech} isSmall />
+                    {/each}
+                </div>
+            {/if}
+        </div>
+
         <p>
             {@html project.description}
         </p>

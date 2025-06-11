@@ -31,3 +31,9 @@ h1 {
     font-weight: 600;
     font-size: 2em;
 }
+
+@media (width < 800px) {
+    .app-body {
+        font-size: 0.8em;
+    }
+}
