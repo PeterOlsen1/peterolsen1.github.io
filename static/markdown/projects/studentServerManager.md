@@ -1,4 +1,4 @@
-# Student Server Manager
+#
 
 <div class="tools">
     <div class="tool tuari">

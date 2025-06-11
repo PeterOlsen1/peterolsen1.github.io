@@ -1,39 +1,21 @@
 <script lang="ts">
+    import { goto } from "$app/navigation";
     import Project from "$lib/components/Project.svelte";
-    import type { ArticleLinkProps } from "$lib/types/articleLink";
+    import { currentlySelectedProject, projects } from "./projects.svelte";
 
-    const projects: ArticleLinkProps[] = [
+    currentlySelectedProject.project = projects[0]; //reset to home project
 
-    ]
 </script>
 
 <style>
-    .main {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-    }
-
-    h1 {
-        font-size: 2em;
-        font-weight: 600;
-    }
-    
     .projects {
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        gap: 1.5em;
     }
 </style>
 
-<br><br>
 <div class="main">
-    <h1>
-        Projects
-    </h1>
-
     <p>
         I love to do my learning through my projects. In this page you will find a myriad of different projects
         that I have worked on across a spectrum of technologies and languages. I will only include those that I feel
@@ -43,7 +25,10 @@
 
     <div class="projects">
         {#each projects as project}
-            <Project title={project.title} article={project.article}>
+            <Project title={project.title} article={project.article} onclickFunction={() => {
+                currentlySelectedProject.project = project;
+                goto(`/projects/${project.article}`);
+            }}>
                 {@html project.description}
             </Project>
         {/each}

@@ -27,7 +27,7 @@ export const themes: any = {
         "--button-background-color": "rgba(200, 200, 200, 0.2)",
         "--button-hover-color": "rgba(200, 200, 200, 0.5)",
         "--black-image-filter": "invert(0)",
-        "--code-background-color": "rgba(0, 0, 0, 0.05)"
+        "--background-color-light": "rgba(0, 0, 0, 0.05)"
     },
     dark: {
         "--border-color": "#ffffff",
@@ -36,7 +36,7 @@ export const themes: any = {
         "--text-color": "#ffffff",
         "--background-color": "rgb(55, 55, 55)",
         "--black-image-filter": "invert(1)",
-        "--code-background-color": "rgba(255, 255, 255, 0.05)"
+        "--background-color-light": "rgba(255, 255, 255, 0.05)"
     }
 }
 

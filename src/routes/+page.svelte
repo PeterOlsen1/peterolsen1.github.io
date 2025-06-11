@@ -3,14 +3,6 @@
 </script>
 
 <style>
-    .main {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 2em;
-    }
-
     .header {
         width: 100%;
         text-align: center;
@@ -40,9 +32,5 @@
         in computer science following my graduation next semester, hopefully increasing my knowledge and appreciation for
         these great thinking rocks we call computers.
     </IndexText>
-    <!-- <br><br><br><br><br><br><br>yo
-    <br><br><br><br><br><br><br>yo
-    <br><br><br><br><br><br><br>yo
-    <br><br><br><br><br><br><br>yo -->
 </div>
 
