@@ -1,12 +1,11 @@
 <script>
     import { page } from "$app/state";
     import Technology from "$lib/components/Technology.svelte";
-    import { currentlySelectedProject } from "../projects.svelte";
+    import { selectedProject } from "../projects.svelte";
     import '$lib/style/github-md.css';
     import '$lib/style/custom-md.css';
 
     const { text } = page.data;
-    console.log(currentlySelectedProject);
 </script>
 
 <style>
@@ -24,7 +23,7 @@
 </style>
 
 <div class="project-container">
-    {#each currentlySelectedProject.technologies as tech}
+    {#each selectedProject.technologies as tech}
         <Technology tech={tech} />
     {/each}
 </div>

@@ -1,7 +1,7 @@
 <script>
-    import { currentlySelectedProject } from "./projects.svelte";
+    import { selectedProject } from "./projects.svelte";
 
-    Object.assign(currentlySelectedProject, {
+    Object.assign(selectedProject, {
         title: "????????",
         article: "error",
         description: "An error has occurred. Please try again later.",

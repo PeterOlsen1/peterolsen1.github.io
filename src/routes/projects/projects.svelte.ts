@@ -49,4 +49,4 @@ export const projects: ProjectProps[] = [
     }
 ];
 
-export const currentlySelectedProject: ProjectProps = $state(projects[0]);
+export const selectedProject: ProjectProps = $state(projects[0]);

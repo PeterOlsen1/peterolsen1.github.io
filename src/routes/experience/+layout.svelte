@@ -1,9 +1,9 @@
 <script lang="ts">
-    import { selectedProject, projects } from "./projects.svelte";
+    import { selectedExperience, experiences } from "./experience.svelte";
     import { fade } from 'svelte/transition';
     const { children } = $props();
 
-    const projTitle = $derived(selectedProject.title);
+    const experienceTitle = $derived(selectedExperience.title);
 </script>
 
 <style>
@@ -39,22 +39,22 @@
 </style>
 
 <svelte:head>
-    <title>Projects | {projTitle}</title>
-    <meta name="description" content={selectedProject.description} />
+    <title>Experiences | {experienceTitle}</title>
+    <meta name="description" content={selectedExperience.description} />
 </svelte:head>
 <br><br>
 <div class="main">
     <h1>
-        Projects&nbsp;&nbsp;>&nbsp;&nbsp;
-        {#key projTitle}
+        Experiences&nbsp;&nbsp;>&nbsp;&nbsp;
+        {#key experienceTitle}
             <span in:fade={{ duration: 500 }}>
-                {projTitle}
+                {experienceTitle}
             </span>
         {/key}
     </h1>
-    {#if projTitle !== 'Home'}
-        <a href='/projects' onclick={() => Object.assign(selectedProject, projects[0])}>
-            Back to projects <img src='/arrow.png' style="filter: var(--black-image-filter); width: 1em; height: 1em;">
+    {#if experienceTitle !== 'Home'}
+        <a href='/experience' onclick={() => Object.assign(selectedExperience, experiences[0])}>
+            Back to experience <img src='/arrow.png' style="filter: var(--black-image-filter); width: 1em; height: 1em;">
         </a>
     {/if}
 

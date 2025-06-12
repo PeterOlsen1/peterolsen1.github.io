@@ -1,9 +1,9 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
     import Project from "$lib/components/Project.svelte";
-    import { currentlySelectedProject, projects } from "./projects.svelte";
+    import { selectedProject, projects } from "./projects.svelte";
 
-    Object.assign(currentlySelectedProject, projects[0]); //reset to home project
+    Object.assign(selectedProject, projects[0]); //reset to home project
 
 </script>
 
@@ -29,7 +29,7 @@
             <Project 
                 project={project} 
                 onclickFunction={() => {
-                    Object.assign(currentlySelectedProject, project);
+                    Object.assign(selectedProject, project);
                     goto(`/projects/${project.article}`);
                 }}
             />
