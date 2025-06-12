@@ -1,26 +1,3 @@
-#
-
-<div class="tools">
-    <div class="tool tuari">
-        <img src="https://cdn.svgporn.com/logos/tauri.svg">
-        <div>
-            Tauri
-        </div>
-    </div>
-    <div class="tool rust">
-        <img src="https://cdn.svgporn.com/logos/rust.svg">
-        <div>
-            Rust
-        </div>
-    </div>
-    <div class="tool svelte">
-        <img src="https://cdn.svgporn.com/logos/svelte-icon.svg">
-        <div>
-            Svelte
-        </div>
-    </div>
-</div>
-
 ### Problem Scope
 
 In my time as a TA here at the U, I've spent a lot of time booting up servers and managing processes.

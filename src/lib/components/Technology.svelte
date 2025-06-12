@@ -1,7 +1,7 @@
 <script lang="ts">
     type TechProps = {
         tech: string;
-        isSmall: boolean;
+        isSmall?: boolean;
     }
 
     type TechObject = {
@@ -110,7 +110,12 @@
             imageURL: "https://cdn.svgporn.com/logos/handlebars.svg",
             name: "Handlebars",
             background: "#F7931E"
-        }
+        },
+        latex: { 
+            imageURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/LaTeX_logo.svg/2560px-LaTeX_logo.svg.png",
+            name: "LaTeX",
+            background: "#000000"
+        },
     }
 
     const { tech, isSmall } : TechProps = $props();

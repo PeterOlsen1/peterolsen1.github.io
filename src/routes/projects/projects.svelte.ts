@@ -30,6 +30,12 @@ export const projects: ProjectProps[] = [
         technologies: ["ember", "handlebars", "firebase", "azure"]
     },
     {
+        title: "Pathfinding Comparison",
+        article: "pathfindingComparison",
+        description: "A research paper comparing the performance of various pathfinding algorithms.",
+        technologies: ["python", "latex"]
+    },
+    {
         title: "GopherTransit",
         article: "gopherTransit",
         description: "A simple but effective web page to help students easily check transit schedules.",
