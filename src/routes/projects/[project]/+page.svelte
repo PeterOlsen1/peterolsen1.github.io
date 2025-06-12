@@ -13,13 +13,6 @@
         display: flex;
         gap: 1.5em;
     }
-
-    .divider {
-        width: 100%;
-        height: 1px;
-        background-color: var(--border-color);
-        margin: 1em 0;
-    }
 </style>
 
 <div class="project-container">

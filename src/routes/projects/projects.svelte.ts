@@ -1,8 +1,4 @@
-import type { ArticleProps } from "$lib/types/articleLink";
-
-export type ProjectProps = ArticleProps & {
-    technologies: string[];
-};
+import type { ProjectProps } from "$lib/types/project";
 
 export const projects: ProjectProps[] = [
     {

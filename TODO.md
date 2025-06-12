@@ -1,3 +1,3 @@
 # TODO:
-- add mdx for jobs and projects
-- add blog?
+- Flesh out infra
+- Error on experience page not working?

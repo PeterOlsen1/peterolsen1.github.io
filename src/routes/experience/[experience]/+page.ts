@@ -18,7 +18,7 @@ export async function load({ params }) {
         }
 
         const text = await marked(raw);
-        return { text, proj };
+        return { text };
     }
     catch {
         throw error(404, 'Experience not found!');
