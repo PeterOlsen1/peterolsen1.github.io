@@ -13,7 +13,7 @@
         border: 1px solid var(--border-color);
         border-radius: 0.5em;
         padding: 1em;
-        background-color: var(--background-color-light);
+        background-color: var(--background-color-secondary);
         cursor: pointer;
 
         img {
@@ -23,7 +23,7 @@
         }
         
         &:hover {
-            background-color: var(--background-color-light);
+            background-color: var(--background-color-secondary);
 
             h1 {
                 gap: 0.7em;

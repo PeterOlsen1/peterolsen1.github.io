@@ -821,7 +821,7 @@
   margin: 0;
   font-size: 85%;
   white-space: break-spaces;
-  background-color: var(--background-color-light);
+  background-color: var(--background-color-secondary);
   border-radius: 6px;
 }
 
@@ -867,7 +867,7 @@
   font-size: 85%;
   line-height: 1.45;
   color: var(--text-color);
-  background-color: var(--background-color-light);
+  background-color: var(--background-color-secondary);
   border-radius: 6px;
 }
 

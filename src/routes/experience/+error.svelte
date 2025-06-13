@@ -1,11 +1,14 @@
 <script>
-    import { selectedExperience } from "./experience.svelte";
+    import { setExperience } from "./experience.svelte";
 
-    Object.assign(selectedExperience, {
+    setExperience({
         title: "????????",
         article: "error",
         description: "An error has occurred. Please try again later.",
-        technologies: []
+        employer: "Error",
+        startDate: "????",
+        endDate: "????",
+        location: "Error land"
     });
 </script>
 

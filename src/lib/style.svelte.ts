@@ -23,20 +23,22 @@ export const themes: any = {
     light: {
         "--background-color": "#ffffff",
         "--text-color": "#000000",
+        "--text-color-secondary": "rgb(60, 60, 60)",
         "--border-color": "#000000",
         "--button-background-color": "rgba(200, 200, 200, 0.2)",
         "--button-hover-color": "rgba(200, 200, 200, 0.5)",
         "--black-image-filter": "invert(0)",
-        "--background-color-light": "rgba(0, 0, 0, 0.05)"
+        "--background-color-secondary": "rgba(0, 0, 0, 0.05)"
     },
     dark: {
         "--border-color": "#ffffff",
         "--button-background-color": "rgba(255, 255, 255, 0.1)",
         "--button-hover-color": "rgba(255, 255, 255, 0.2)",
         "--text-color": "#ffffff",
+        "--text-color-secondary": "rgb(200, 200, 200)",
         "--background-color": "rgb(55, 55, 55)",
         "--black-image-filter": "invert(1)",
-        "--background-color-light": "rgba(255, 255, 255, 0.05)"
+        "--background-color-secondary": "rgba(255, 255, 255, 0.05)"
     }
 }
 

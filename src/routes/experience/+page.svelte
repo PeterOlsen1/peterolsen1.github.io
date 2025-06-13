@@ -1,10 +1,9 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
     import Experience from "$lib/components/Experience.svelte";
-    import { selectedExperience, experiences } from "./experience.svelte";
+    import { selectedExperience, experiences, setExperience } from "./experience.svelte";
 
-    Object.assign(selectedExperience, experiences[0]); //reset to home
-
+    setExperience(experiences[0]); // reset to home experience
 </script>
 
 <style>
@@ -29,8 +28,8 @@
             <Experience 
                 experience={experience} 
                 onclickFunction={() => {
-                    Object.assign(selectedExperience, experience);
-                    goto(`/experiences/${experience.article}`);
+                    setExperience(experience);
+                    goto(`/experience/${experience.article}`);
                 }}
             />
         {/each}

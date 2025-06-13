@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { selectedExperience, experiences } from "./experience.svelte";
+    import { selectedExperience, experiences, setExperience } from "./experience.svelte";
     import { fade } from 'svelte/transition';
     const { children } = $props();
 
@@ -36,10 +36,19 @@
             }
         }
     }
+
+    .experience-meta {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.2em;
+        position: relative;
+        top: -0.3em;
+        color: var(--text-color-secondary);
+    }
 </style>
 
 <svelte:head>
-    <title>Experiences | {experienceTitle}</title>
+    <title>Experience | {experienceTitle}</title>
     <meta name="description" content={selectedExperience.description} />
 </svelte:head>
 <br><br>
@@ -51,9 +60,17 @@
                 {experienceTitle}
             </span>
         {/key}
-    </h1>
+    </h1>    
     {#if experienceTitle !== 'Home'}
-        <a href='/experience' onclick={() => Object.assign(selectedExperience, experiences[0])}>
+        <div class="experience-meta">
+            <div>
+                {selectedExperience.employer} - {selectedExperience.location}
+            </div>
+            <div>
+                {selectedExperience.startDate} - {selectedExperience.endDate}
+            </div>
+        </div>    
+        <a href='/experience' onclick={() => setExperience(experiences[0])}>
             Back to experience <img src='/arrow.png' style="filter: var(--black-image-filter); width: 1em; height: 1em;">
         </a>
     {/if}

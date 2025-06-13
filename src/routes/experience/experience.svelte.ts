@@ -49,3 +49,7 @@ export const experiences: ExperienceProps[] = [
 ];
 
 export const selectedExperience: ExperienceProps = $state(experiences[0]);
+
+export const setExperience = (experience: ExperienceProps): void => {
+    Object.assign(selectedExperience, experience);
+}

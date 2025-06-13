@@ -4,6 +4,7 @@
     import { selectedProject } from "../projects.svelte";
     import '$lib/style/github-md.css';
     import '$lib/style/custom-md.css';
+    import { addIdsToHTML } from "$lib/utils/markdown";
 
     const { text } = page.data;
 </script>
@@ -22,5 +23,5 @@
 </div>
 <div class="divider"></div>
 <div class="markdown-body">
-    {@html text}
+    {@html addIdsToHTML(text)}
 </div>
