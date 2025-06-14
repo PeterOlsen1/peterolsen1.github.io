@@ -30,6 +30,13 @@
 		width: 60%;
 	}
 
+	.name-socials {
+		flex: 1;
+		align-items: center;
+		display: flex;
+		gap: 1em;
+	}
+
 	.header {
 		width: 100%;
 		display: flex;
@@ -45,6 +52,7 @@
 	.header-content {
 		display: flex;
 		align-items: center;
+		flex-wrap: wrap;
 	}
 
 	img {
@@ -72,7 +80,6 @@
 	.socials {
 		display: flex;
 		gap: 1em;
-		margin-left: 2em;
 	}
 
 	.pages {
@@ -109,11 +116,38 @@
 			width: 90%;
 		}
 	}
+
+	@media (width < 1000px) {
+		.header-content {
+			align-items: center;
+		}
+
+		/* .pages {
+			margin-top: 1em;
+			margin-left: 0;
+			gap: 0.5em;
+		}
+
+		.socials {
+			margin-left: 0;
+			margin-top: 1em;
+		}
+
+		.theme-toggle {
+			margin-right: 0;
+			margin-top: 1em;
+		} */
+
+		.name-socials {
+			width: 100%;
+			flex: 1;
+		}
+	}
 </style>
 
 <div class="header">
 	<div class="header-content">
-		<div class="flex-1 flex items-center">
+		<div class="name-socials">
 			<div class="font-[600] text-4xl tracking-wide cursor-pointer" onclick={() => goto('/')}>
 				Peter Olsen
 			</div>

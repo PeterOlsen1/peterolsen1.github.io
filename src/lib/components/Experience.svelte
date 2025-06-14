@@ -71,6 +71,10 @@
             flex-direction: column;
             align-items: flex-start;
         }
+
+        .experience-right {
+            display: none;
+        }
     }
 </style>
 
@@ -90,7 +94,7 @@
         </div>
 
         <div class="experience-right">
-            <h1>
+            <h1 style="font-size: 1.2em;">
                 {experience.startDate} - {experience.endDate}
             </h1>
             <div>

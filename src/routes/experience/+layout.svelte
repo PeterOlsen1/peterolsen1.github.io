@@ -54,7 +54,7 @@
 <br><br>
 <div class="main">
     <h1>
-        Experiences&nbsp;&nbsp;>&nbsp;&nbsp;
+        Experience&nbsp;&nbsp;>&nbsp;&nbsp;
         {#key experienceTitle}
             <span in:fade={{ duration: 500 }}>
                 {experienceTitle}

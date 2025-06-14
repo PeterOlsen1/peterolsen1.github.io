@@ -17,10 +17,10 @@
 <div class="main">
     <br>
     <p>
-        I love to do my learning through my experiences. In this page you will find a myriad of different experiences
-        that I have worked on, across a spectrum of technologies and languages. I will only include those that I feel
-        are <em>completed</em>, or at least pretty close to being classified as such. If you want to see all of my experiences, completed
-        or not, feel free to checkout my GitHub, linked up at the top of the page (there's a lot...)
+        I personally believe that any experience working in computer science is valuable, whether it be a job, internship, or personal project.
+        On this page, I have compiled a list of my professional experiences, including TA positions and internships.
+        Every experience has shaped my understanding in some special way, shape, or form. Not only my understanding
+        of computer science, but also my understanding of myself and the world around me.
     </p>
     <br>
     <div class="experiences">

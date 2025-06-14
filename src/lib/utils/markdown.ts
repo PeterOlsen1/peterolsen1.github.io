@@ -12,6 +12,7 @@ export function addIdsToHTML(html: string): string {
         heading.id = id;
         heading.innerText = '# ' + headingText;
         heading.setAttribute('onclick', `location.hash = '#${id}'`);
+        heading.style.cursor = 'pointer';
     });
 
     return doc.body.innerHTML;
