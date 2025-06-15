@@ -37,6 +37,12 @@
 		gap: 1em;
 	}
 
+	.pages-theme {
+		display: flex;
+		align-items: center;
+		gap: 1em;
+	}
+
 	.header {
 		width: 100%;
 		display: flex;
@@ -120,27 +126,17 @@
 	@media (width < 1000px) {
 		.header-content {
 			align-items: center;
+			display: block;
 		}
 
-		/* .pages {
-			margin-top: 1em;
-			margin-left: 0;
-			gap: 0.5em;
-		}
-
-		.socials {
-			margin-left: 0;
-			margin-top: 1em;
-		}
-
-		.theme-toggle {
-			margin-right: 0;
-			margin-top: 1em;
-		} */
-
-		.name-socials {
-			width: 100%;
+		.name {
 			flex: 1;
+		}
+
+		.pages {
+			flex: 1;
+			position: relative;
+			left: -0.5em;
 		}
 	}
 </style>
@@ -148,32 +144,34 @@
 <div class="header">
 	<div class="header-content">
 		<div class="name-socials">
-			<div class="font-[600] text-4xl tracking-wide cursor-pointer" onclick={() => goto('/')}>
+			<h1 class="font-[600] tracking-wide cursor-pointer name" onclick={() => goto('/')}>
 				Peter Olsen
-			</div>
+			</h1>
 
 			<div class="socials">
 				<SocialMedia link={"https://github.com/PeterOlsen1"} imageURL={"https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"}>Github</SocialMedia>
 				<SocialMedia link={"https://www.linkedin.com/in/peterolsen2/"} imageURL={"https://static-00.iconduck.com/assets.00/linkedin-icon-2048x2048-3mmtnow6.png"}>Linkedin</SocialMedia>
 			</div>
 		</div>
-		<div class="pages">
-			{#each pages as page}
-				{#if page.name === '|'}
-					<span class="separator"></span>
+		<div class="pages-theme">
+			<div class="pages">
+				{#each pages as page}
+					{#if page.name === '|'}
+						<span class="separator"></span>
+					{:else}
+						<a href={page.path} class="page">
+							{page.name}
+						</a>
+					{/if}
+				{/each}
+			</div>
+			<div class="theme-toggle" onclick={toggleTheme}> 
+				{#if theme.theme === 'dark'}
+					<img src='/sun.svg' alt='sun' style="width: 1.5em; height: 1.5em;">
 				{:else}
-					<a href={page.path} class="page">
-						{page.name}
-					</a>
+					<img src='/moon.svg' alt='moon' style="width: 1.5em; height: 1.5em;">
 				{/if}
-			{/each}
-		</div>
-		<div class="theme-toggle" onclick={toggleTheme}> 
-			{#if theme.theme === 'dark'}
-				<img src='/sun.svg' alt='sun' style="width: 1.5em; height: 1.5em;">
-			{:else}
-				<img src='/moon.svg' alt='moon' style="width: 1.5em; height: 1.5em;">
-			{/if}
+			</div>
 		</div>
 	</div>
 </div>

@@ -13,6 +13,11 @@
     }
 </style>
 
+<svelte:head>
+	<title>Peter Olsen</title>
+	<meta name="description" content="Portfolio of Peter Olsen, a software engineer specializing in web development and design. Explore projects, experience, and blog posts." />
+	<link rel="icon" href="/favicon.ico" />
+</svelte:head>
 
 <div class="main">
     <div class="header">

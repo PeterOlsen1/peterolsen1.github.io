@@ -32,3 +32,14 @@ resulting in a "Hello World" app size of under _1mb_!
 
 ### Procedures
 
+This project was inspired by my operating systems course last semester, helping me understand the basics of process management.
+The main idea here was being able to spin up servers without needing to navigate through boundless directories, hiding their inner submissions
+behind the wall of gradescope obscurity.
+
+To solve this, I took the approach of recursively searching two layers into each directory, looking for any file that contains "server."
+Depending on the file extension, the discovered server file would be run with either a python or node runtime, since our class only
+deals with servers in those two runtimes. Since Rust allows for extremely safe systems level programming, the Rust backend
+made this process relatively painless. 
+
+### Challenges
+
