@@ -24,4 +24,5 @@
 <div class="divider"></div>
 <div class="markdown-body">
     {@html addIdsToHTML(text)}
+    <br><br>
 </div>
