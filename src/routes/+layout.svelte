@@ -117,6 +117,16 @@
 		}
 	}
 
+	/* .footer {
+		width: 100%;
+		text-align: center;
+		font-size: 0.8em;
+		padding: 1em;
+		color: var(--text-color-secondary);
+		position: relative;
+		bottom: 0;
+	} */
+
 	@media (width < 1600px) {
 		.main, .header-content {
 			width: 90%;
@@ -178,3 +188,6 @@
 <div class="main">
 	{@render children()}
 </div>
+<!-- <div class="footer">
+	<p>© 2025 Peter Olsen. All rights reserved.</p>
+</div> -->

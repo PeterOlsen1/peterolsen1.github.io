@@ -22,6 +22,9 @@
         that I have worked on, across a spectrum of technologies and languages. I will only include those that I feel
         are <em>completed</em>, or at least pretty close to being classified as such. If you want to see all of my projects, completed
         or not, feel free to checkout my GitHub, linked up at the top of the page (there's a lot...)
+
+        <br>
+        Some of these don't have a dedicated page yet, and the link will take you nowhere (sorry!). Hopefully I will get around to it soon.
     </p>
     <br>
     <div class="projects">

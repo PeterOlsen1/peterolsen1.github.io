@@ -1,7 +1,7 @@
 <script lang="ts">
     import Technology from "./Technology.svelte";
 
-    const { project, onclickFunction } = $props();
+    const { project, onclickFunction, isSmall } = $props();
     console.log(project);
 </script>
 
@@ -76,7 +76,7 @@
 {#if project.title !== 'Home'}
     <div class="project" onclick={onclickFunction}>
         <div class="title-container">
-            <h1>
+            <h1 style={isSmall ? 'font-size: 1.2em;' : ''}>
                 {project.title} <img src="/arrow.png" style="filter: var(--black-image-filter); width: 1em; height: 1em;">
             </h1>
             {#if 'technologies' in project && project.technologies.length > 0}

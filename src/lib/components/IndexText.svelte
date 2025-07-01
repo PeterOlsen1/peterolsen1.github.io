@@ -14,7 +14,7 @@
         font-size: 1.5em;
         font-weight: 600;
         margin-bottom: 0.5em;
-        letter-spacing: 0.05em;
+        letter-spacing: 0.02em;
     }
 
     .content {
