@@ -1,0 +1,1 @@
+function a(n){const e=new DOMParser().parseFromString(n,"text/html");return e.querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(t=>{const r=t.textContent||"",o=r.trim().toLowerCase().replace(/ /g,"-");t.id=o,t.innerText="# "+r,t.setAttribute("onclick",`location.hash = '#${o}'`),t.style.cursor="pointer"}),e.body.innerHTML}export{a};

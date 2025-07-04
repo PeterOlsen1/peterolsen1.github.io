@@ -1,0 +1,1 @@
+import{t as o,a}from"../chunks/ClHZMTmQ.js";import"../chunks/DGfUfCOf.js";import{f as p}from"../chunks/CaayXJvE.js";function h(t){p();var e=o("This might come eventually. If I have any profound thoughts, I'll put them here.");a(t,e)}export{h as component};
