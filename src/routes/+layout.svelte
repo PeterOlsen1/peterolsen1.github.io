@@ -117,15 +117,10 @@
 		}
 	}
 
-	/* .footer {
-		width: 100%;
-		text-align: center;
-		font-size: 0.8em;
-		padding: 1em;
-		color: var(--text-color-secondary);
-		position: relative;
-		bottom: 0;
-	} */
+	.name {
+		cursor: pointer;
+		text-wrap: nowrap;
+	}
 
 	@media (width < 1600px) {
 		.main, .header-content {
@@ -141,6 +136,7 @@
 
 		.name {
 			flex: 1;
+			text-wrap: none;
 		}
 
 		.pages {
@@ -151,10 +147,13 @@
 	}
 </style>
 
+<svelte:head>
+	<link rel="icon" href="/favicon.png" />
+</svelte:head>
 <div class="header">
 	<div class="header-content">
 		<div class="name-socials">
-			<h1 class="font-[600] tracking-wide cursor-pointer name" onclick={() => goto('/')}>
+			<h1 class="name" onclick={() => goto('/')}>
 				Peter Olsen
 			</h1>
 

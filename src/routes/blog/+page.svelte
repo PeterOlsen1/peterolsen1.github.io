@@ -1,1 +1,1 @@
-Stuff here about blog.
+This might come eventually. If I have any profound thoughts, I'll put them here.
