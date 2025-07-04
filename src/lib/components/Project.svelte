@@ -2,7 +2,6 @@
     import Technology from "./Technology.svelte";
 
     const { project, onclickFunction, isSmall } = $props();
-    console.log(project);
 </script>
 
 <style>

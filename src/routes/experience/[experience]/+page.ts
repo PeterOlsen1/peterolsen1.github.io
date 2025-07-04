@@ -2,6 +2,8 @@ import { error } from '@sveltejs/kit';
 import { marked } from 'marked';
 import { experiences } from '../experience.svelte.js';
 
+export const prerender = 'auto';
+
 export async function load({ params }) {
     const exp = params.experience;
 

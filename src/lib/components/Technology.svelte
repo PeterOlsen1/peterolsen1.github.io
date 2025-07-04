@@ -120,7 +120,6 @@
 
     const { tech, isSmall } : TechProps = $props();
     const techObject = ALL_TECH[tech];
-    console.log(tech, techObject);
 </script>
 
 <style>

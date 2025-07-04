@@ -1,6 +1,8 @@
 import { error } from '@sveltejs/kit';
 import { marked } from 'marked';
 
+export const prerender = 'auto';
+
 export async function load({ params }) {
     const proj = params.project;
     if (!proj) {

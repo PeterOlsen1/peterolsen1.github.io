@@ -6,7 +6,6 @@
 	import { page } from "$app/state";
     import { goto } from "$app/navigation";
 
-	console.log(page.route.id);
 	let { children } = $props();
 
 
