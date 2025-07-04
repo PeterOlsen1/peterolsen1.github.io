@@ -158,7 +158,7 @@
 
 			<div class="socials">
 				<SocialMedia link={"https://github.com/PeterOlsen1"} imageURL={"https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg"}>Github</SocialMedia>
-				<SocialMedia link={"https://www.linkedin.com/in/peterolsen2/"} imageURL={"https://static-00.iconduck.com/assets.00/linkedin-icon-2048x2048-3mmtnow6.png"}>Linkedin</SocialMedia>
+				<SocialMedia link={"https://www.linkedin.com/in/peterolsen2/"} imageURL={"https://images.seeklogo.com/logo-png/48/3/linkedin-logo-png_seeklogo-480553.png"}>Linkedin</SocialMedia>
 			</div>
 		</div>
 		<div class="pages-theme">
