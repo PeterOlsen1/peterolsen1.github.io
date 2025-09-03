@@ -8,6 +8,12 @@ export const projects: ProjectProps[] = [
         technologies: []
     },
     {
+        title: "Load Balancer",
+        article: "loadBalancer",
+        description: "A Kubernetes-esque load balancer that automatically distributes traffic and horizontally scales applications.",
+        technologies: ["go", "docker"]
+    },
+    {
         title: "Student Server Manager",
         article: "studentServerManager",
         description: "A desktop app to manage student servers nested within gradescope assignment submissions.",
