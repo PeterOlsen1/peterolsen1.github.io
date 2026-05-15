@@ -116,6 +116,11 @@
             name: "LaTeX",
             background: "#000000"
         },
+        docker: {
+            imageURL: "https://cdn.svgporn.com/logos/docker-icon.svg",
+            name: "Docker",
+            background: "#2496ED"
+        }
     }
 
     const { tech, isSmall } : TechProps = $props();
