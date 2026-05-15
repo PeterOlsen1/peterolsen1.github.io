@@ -59,7 +59,7 @@
     </div>
     <div class="images">
         <img src="/images/me.jpg" alt="Peter Olsen">
-        <img src="/images/me_bathroom.jpg" alt="Peter Olsen">
+        <img src="/images/me_graduation.jpg" alt="Peter Olsen">
         <img src="/images/me_pizza.JPEG" alt="Peter Olsen">
     </div>
  
