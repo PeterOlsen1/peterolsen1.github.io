@@ -87,7 +87,7 @@
             background: "#336791"
         },
         firebase: { 
-            imageURL: "https://cdn.svgporn.com/logos/firebase.svg",
+            imageURL: "https://www.gstatic.com/devrel-devsite/prod/vb08cbdb02acf7f66ad9727ddfba9d81df8806422eb5dd63dba194c9c8c7997f7/firebase/images/touchicon-180.png",
             name: "Firebase",
             background: "#FFCA28"
         },
@@ -120,6 +120,16 @@
             imageURL: "https://cdn.svgporn.com/logos/docker-icon.svg",
             name: "Docker",
             background: "#2496ED"
+        },
+        webassembly: {
+            imageURL: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/WebAssembly_Logo.svg/3840px-WebAssembly_Logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail",
+            name: "WebAssembly",
+            background: "#664ef1",
+        },
+        redis: {
+            imageURL: "https://cdn.iconscout.com/icon/free/png-256/free-redis-icon-svg-download-png-1175103.png",
+            name: "Redis",
+            background: "#d82d21",
         }
     }
 

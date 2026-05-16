@@ -1,5 +1,6 @@
 <script lang="ts">
     import { goto } from "$app/navigation";
+    import { page } from "$app/state";
     import Experience from "$lib/components/Experience.svelte";
     import { selectedExperience, experiences, setExperience } from "./experience.svelte";
 

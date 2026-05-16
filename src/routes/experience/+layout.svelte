@@ -71,7 +71,7 @@
             </div>
         </div>    
         <a href='/experience' onclick={() => setExperience(experiences[0])}>
-            Back to experience <img src='/arrow.png' style="filter: var(--black-image-filter); width: 1em; height: 1em;">
+            Back to experiences <img src='/arrow.png' style="filter: var(--black-image-filter); width: 1em; height: 1em;">
         </a>
     {/if}
 

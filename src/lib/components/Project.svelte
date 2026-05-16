@@ -12,6 +12,7 @@
         border: 1px solid var(--border-color);
         border-radius: 0.5em;
         padding: 1em;
+        gap: 1em;
         background-color: var(--background-color-secondary);
         cursor: pointer;
 
@@ -40,6 +41,7 @@
         align-items: center;
         gap: 0.5em;
         transition: gap 0.2s ease-in-out;
+        flex: 1;
     }
 
     .techs {
@@ -48,8 +50,8 @@
         gap: 0.5em;
         margin-top: 0.25em;
         margin-bottom: 0.25em;
-        flex: 1;
         justify-content: flex-end;
+        width: 70%;
     }
 
     .title-container {

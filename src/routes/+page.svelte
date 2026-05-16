@@ -3,6 +3,8 @@
     import Project from "$lib/components/Project.svelte";
     import FlashingText from "$lib/components/FlashingText.svelte";
     import { projects } from "./projects/projects.svelte";
+    import { goto } from "$app/navigation";
+    import { selectedProject } from "./projects/projects.svelte";
 
     let projectsShort = projects.slice(0, 3); // Display only the first 3 projects
 </script>
@@ -19,6 +21,9 @@
 
     .main {
         gap: 2em;
+        max-width: 70vw;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     .project-container {
@@ -26,8 +31,8 @@
         flex-wrap: wrap;
         gap: 1em;
         justify-content: center;
-        width: 80%;
-        margin: 0 auto;
+        width: 100%;
+        margin: 1em auto;
     }
 
     .images {
@@ -74,13 +79,15 @@
 
     <IndexText title="where am i?">
         As an undergraduate student at the University of Minnesota - Twin Cities, I've taken courses in everything from
-        machine learning, computer architecture, operating systems, and web development. I plan to pursue a master's degree
-        in computer science following my graduation next semester, hopefully increasing my knowledge and appreciation for
-        these great thinking rocks we call computers.
+        machine learning, computer architecture, operating systems, and web development. Currently, I am pursuing a master's degree
+        at the University of Minnesota, and will begin research next semester on sustainable computing, hoping to work on some
+        of the current problems surrounding the environmental effects of massive computation (looking at you, data centers).
         <br><br>
-        In the process of obtaining my degree, I have worked on a numerous amount of projects, but more importantly,
-        I have spent four semesters as a teaching assistant. Being a TA has taught me countless lessons in communication
+        In the process of obtaining my degrees, I have worked on a numerous amount of projects, but more importantly,
+        I have spent six semesters as a teaching assistant. Being a TA has taught me countless lessons in communication
         that I would not have learned otherwise, and has improved my ability to explain complex concepts in a clear and concise manner.
+        Not only that, but I have worked as a graduate TA for an operating systems course, learning important lessons about
+        course administration and assignment creation.
     </IndexText>
 
     <IndexText title="what have i done?">
@@ -93,10 +100,11 @@
                 <Project
                     project={project}
                     onclickFunction={() => {
-                    window.location.href = `/projects/${project.article}`;
-                }}
-                isSmall
-            />
+                        Object.assign(selectedProject, project);
+                        goto(`/projects/${project.article}`);
+                    }}
+                    isSmall
+                />
             {/each}
         </div>
     </IndexText>

@@ -16,34 +16,25 @@ export const experiences: ExperienceProps[] = [
         article: "thrivent",
         description: "Software Engineer Intern at Thrivent",
         startDate: "May 2025",
-        endDate: "Present",
-        location: "Minneapolis, MN"
-    },
-    {
-        title: "CSCI 4131 - Teaching Assistant",
-        employer: "University of Minnesota",
-        article: "csci4131",
-        description: "Teaching assistant for the CSCI 4131 course at U of M",
-        startDate: "September 2024",
-        endDate: "Present",
+        endDate: "August 2025",
         location: "Minneapolis, MN"
     },
     {
         title: "Software Engineer Intern",
         employer: "RAO Manufacturing",
         article: "rao",
-        description: "Software Engineer Intern at RAO",
+        description: "Software Engineer Intern at RAO manufacturing",
         startDate: "May 2024",
         endDate: "August 2024",
         location: "Fridley, MN"
     },
     {
-        title: "CSCI 1133 - Teaching Assistant",
+        title: "Teaching Assistant",
         employer: "University of Minnesota",
-        article: "csci1133",
-        description: "Teaching assistant for the CSCI 1133 course at U of M",
-        startDate: "January 2024",
-        endDate: "May 2024",
+        article: "ta",
+        description: "Teaching assistant for numerous courses at the U of M",
+        startDate: "September 2023",
+        endDate: "Present",
         location: "University of Minnesota, Minneapolis, MN"
     }
 ];

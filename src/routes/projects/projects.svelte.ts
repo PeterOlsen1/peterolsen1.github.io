@@ -8,6 +8,12 @@ export const projects: ProjectProps[] = [
         technologies: []
     },
     {
+        title: "Cloud-RAMP",
+        article: "cloudRamp",
+        description: "A WebAssembly-runtime based FaaS service for WebSockets",
+        technologies: ["go", "docker", "webassembly", "redis", "firebase"],
+    },
+    {
         title: "Load Balancer",
         article: "loadBalancer",
         description: "A Kubernetes-esque load balancer that automatically distributes traffic and horizontally scales applications.",
@@ -31,12 +37,12 @@ export const projects: ProjectProps[] = [
         description: "A web app for musicians to save and edit their sheet music.",
         technologies: ["ember", "handlebars", "firebase", "azure"]
     },
-    {
-        title: "Pathfinding Comparison",
-        article: "pathfindingComparison",
-        description: "A research paper comparing the performance of various pathfinding algorithms.",
-        technologies: ["python", "latex"]
-    },
+    // {
+    //     title: "Pathfinding Comparison",
+    //     article: "pathfindingComparison",
+    //     description: "A research paper comparing the performance of various pathfinding algorithms.",
+    //     technologies: ["python", "latex"]
+    // },
     {
         title: "GopherTransit",
         article: "gopherTransit",
